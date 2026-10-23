@@ -1,0 +1,24 @@
+[
+  { "type": "sourcestart", "data": { "type": "csv-file" } },
+  { "type": "createstart", "data": {} },
+  { "type": "createend", "data": {} },
+  { "type": "sourceend", "data": {} },
+  { "type": "analyzestart", "data": { "query": "Compare Jan and Feb sales" } },
+  { "type": "translatestart", "data": { "query": "Compare Jan and Feb sales", "attempt": 0 } },
+  { "type": "translateend", "data": { "dsl": "SELECT month, SUM(sales) FROM sales GROUP BY month" } },
+  { "type": "querystart", "data": { "dsl": "SELECT month, SUM(sales) FROM sales GROUP BY month" } },
+  {
+    "type": "queryend",
+    "data": {
+      "schema": [],
+      "data": [
+        { "month": "2025-01", "sales": 38897.18 },
+        { "month": "2025-02", "sales": 21804.11 }
+      ],
+      "rowCount": 2
+    }
+  },
+  { "type": "summarizestart", "data": {} },
+  { "type": "summarizeend", "data": { "text": "Sales fell from 38,897.18 to 21,804.11." } },
+  { "type": "analyzeend", "data": {} }
+]

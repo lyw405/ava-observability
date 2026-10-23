@@ -1,0 +1,56 @@
+{
+  "name": "ava-observability",
+  "version": "0.1.0",
+  "description": "Zero-intrusion observability adapter for AVA: turn every analysis run into standard traces for OpenTelemetry / Langfuse / console.",
+  "license": "MIT",
+  "author": "lyw405",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyw405/ava-observability.git"
+  },
+  "homepage": "https://github.com/lyw405/ava-observability#readme",
+  "bugs": {
+    "url": "https://github.com/lyw405/ava-observability/issues"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "tsx examples/replay-demo.ts",
+    "example:deepseek": "tsx examples/trace-deepseek.ts",
+    "verify": "tsx scripts/verify-real-ava.ts",
+    "record": "tsx scripts/record-real-analyze.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@antv/ava": "^4.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@antv/ava": "^4.0.0-beta.1",
+    "@types/node": "^22.20.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "4.1.11"
+  },
+  "keywords": [
+    "ava",
+    "observability",
+    "tracing",
+    "opentelemetry",
+    "langfuse",
+    "visual-analytics",
+    "audit",
+    "token-usage",
+    "cost"
+  ]
+}

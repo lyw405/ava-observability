@@ -1,0 +1,70 @@
+{
+  "avaVersion": "4.0.0-beta.1",
+  "events": [
+    {
+      "type": "loadstart",
+      "data": {
+        "type": "csv"
+      }
+    },
+    {
+      "type": "createstart",
+      "data": {}
+    },
+    {
+      "type": "createend",
+      "data": {}
+    },
+    {
+      "type": "loadend",
+      "data": {}
+    },
+    {
+      "type": "profilestart",
+      "data": {}
+    },
+    {
+      "type": "profileend",
+      "data": {}
+    },
+    {
+      "type": "analyzestart",
+      "data": {
+        "query": "Compare income by region"
+      }
+    },
+    {
+      "type": "translatestart",
+      "data": {
+        "query": "Compare income by region",
+        "attempt": 0
+      }
+    },
+    {
+      "type": "translateend",
+      "data": {
+        "error": {
+          "name": "AI_APICallError",
+          "message": "Cannot connect to API: bad port"
+        }
+      }
+    },
+    {
+      "type": "analyzeend",
+      "data": {
+        "error": {
+          "name": "AI_APICallError",
+          "message": "Cannot connect to API: bad port"
+        }
+      }
+    },
+    {
+      "type": "disposestart",
+      "data": {}
+    },
+    {
+      "type": "disposeend",
+      "data": {}
+    }
+  ]
+}
